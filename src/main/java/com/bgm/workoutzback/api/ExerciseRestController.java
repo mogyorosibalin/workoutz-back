@@ -19,7 +19,7 @@ public class ExerciseRestController {
 
     @GetMapping("/exercises")
     public List<Exercise> getExercises() {
-        return exerciseRepository.findAll();
+        return exerciseRepository.findAllByOrderById();
     }
 
     @GetMapping("/exercises/{id}")
